@@ -22,8 +22,10 @@ public class LinkedList {
 		}
 		else {
 			if(index == 0) { // 가장 처음을 삭제할 때
+				Node temp = this.head;
 				this.head = this.head.getNext();
 				this.size--;
+				System.out.println("!" + index +"번째 원소 삭제 : " + temp.getData());
 				return true;
 			}
 			else{	// 그 외 나머지
@@ -32,10 +34,10 @@ public class LinkedList {
 				for(int i = 0; i < index-1; i++) {
 					temp = temp.getNext();
 				}
-				System.out.println(temp.getNext().getData());
+				System.out.println("!" + index +"번째 원소 삭제 : " + temp.getNext().getData());
 				temp.setNext(temp.getNext().getNext());
 				this.size--;
-				return false;
+				return true;
 			}			
 		}
 	}

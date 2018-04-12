@@ -14,15 +14,12 @@ public class _Main {
 		a.add(5);
 		a.print();
 		
-		System.out.println("2번 째 삭제");
 		a.delete(2);
 		a.print();
 		
-		System.out.println("0번 째 삭제");
 		a.delete(0);
 		a.print();
 		
-		System.out.println("마지막 삭제");
 		a.delete(a.getSize()-1);
 		a.print();
 	}
