@@ -25,8 +25,6 @@ public class _Main {
 		System.out.println("마지막 삭제");
 		a.delete(a.getSize()-1);
 		a.print();
-		
-		//System.out.println(a.getSize());
 	}
 
 }

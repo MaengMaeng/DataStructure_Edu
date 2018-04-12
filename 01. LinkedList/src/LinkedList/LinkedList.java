@@ -26,17 +26,6 @@ public class LinkedList {
 				this.size--;
 				return true;
 			}
-			else if(index == this.size-1) { // 가장 마지막을 삭제할 때
-				Node temp = this.head;
-				
-				for(int i = 0; i < this.size-2; i++) {
-					temp = temp.getNext();
-				}
-				System.out.println(temp.getNext().getData());
-				temp.setNext(null);
-				this.size--;
-				return false;
-			}
 			else{	// 그 외 나머지
 				Node temp = this.head;
 				
