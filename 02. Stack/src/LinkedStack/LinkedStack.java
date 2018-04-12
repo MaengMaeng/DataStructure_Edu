@@ -35,6 +35,14 @@ public class LinkedStack {
 		}
 	}
 	
+	public Node peek() {
+		return this.top;
+	}
+	
+	public int size() {
+		return this.size;
+	}
+	
 	public void print() {
 		Node temp = this.top;
 		System.out.print(" >> " + temp.getData() + " ");
